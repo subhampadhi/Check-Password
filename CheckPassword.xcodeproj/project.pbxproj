@@ -14,6 +14,12 @@
 		0FCDD99E22B4FFCB0098E877 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCDD99C22B4FFCB0098E877 /* LaunchScreen.storyboard */; };
 		0FCDD9A922B4FFCC0098E877 /* CheckPasswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD9A822B4FFCC0098E877 /* CheckPasswordTests.swift */; };
 		0FCDD9B422B4FFCC0098E877 /* CheckPasswordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD9B322B4FFCC0098E877 /* CheckPasswordUITests.swift */; };
+		0FCDD9C422B523740098E877 /* PasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD9C322B523740098E877 /* PasswordVC.swift */; };
+		0FCDD9CA22B543A70098E877 /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD9C922B543A70098E877 /* PasswordView.swift */; };
+		0FCDD9CC22B566140098E877 /* PasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD9CB22B566140098E877 /* PasswordViewModel.swift */; };
+		0FCDD9CE22B56C9B0098E877 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD9CD22B56C9B0098E877 /* Box.swift */; };
+		0FCDD9D022B578FA0098E877 /* PasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD9CF22B578FA0098E877 /* PasswordModel.swift */; };
+		0FCDD9D222B58E3B0098E877 /* CheckPasswordStrength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDD9D122B58E3B0098E877 /* CheckPasswordStrength.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		0FCDD9AF22B4FFCC0098E877 /* CheckPasswordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckPasswordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FCDD9B322B4FFCC0098E877 /* CheckPasswordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPasswordUITests.swift; sourceTree = "<group>"; };
 		0FCDD9B522B4FFCC0098E877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FCDD9C322B523740098E877 /* PasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordVC.swift; sourceTree = "<group>"; };
+		0FCDD9C922B543A70098E877 /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
+		0FCDD9CB22B566140098E877 /* PasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewModel.swift; sourceTree = "<group>"; };
+		0FCDD9CD22B56C9B0098E877 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		0FCDD9CF22B578FA0098E877 /* PasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordModel.swift; sourceTree = "<group>"; };
+		0FCDD9D122B58E3B0098E877 /* CheckPasswordStrength.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckPasswordStrength.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +109,18 @@
 		0FCDD99222B4FFC90098E877 /* CheckPassword */ = {
 			isa = PBXGroup;
 			children = (
+				0FCDD9C822B543850098E877 /* ViewController */,
+				0FCDD9C722B5433E0098E877 /* ViewModel */,
+				0FCDD9C622B5432F0098E877 /* View */,
+				0FCDD9C522B543200098E877 /* Model */,
 				0FCDD99322B4FFC90098E877 /* AppDelegate.swift */,
 				0FCDD99522B4FFC90098E877 /* ViewController.swift */,
 				0FCDD99722B4FFC90098E877 /* Main.storyboard */,
 				0FCDD99A22B4FFCB0098E877 /* Assets.xcassets */,
 				0FCDD99C22B4FFCB0098E877 /* LaunchScreen.storyboard */,
 				0FCDD99F22B4FFCB0098E877 /* Info.plist */,
+				0FCDD9CD22B56C9B0098E877 /* Box.swift */,
+				0FCDD9D122B58E3B0098E877 /* CheckPasswordStrength.swift */,
 			);
 			path = CheckPassword;
 			sourceTree = "<group>";
@@ -123,6 +141,38 @@
 				0FCDD9B522B4FFCC0098E877 /* Info.plist */,
 			);
 			path = CheckPasswordUITests;
+			sourceTree = "<group>";
+		};
+		0FCDD9C522B543200098E877 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0FCDD9CF22B578FA0098E877 /* PasswordModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0FCDD9C622B5432F0098E877 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0FCDD9C922B543A70098E877 /* PasswordView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0FCDD9C722B5433E0098E877 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0FCDD9CB22B566140098E877 /* PasswordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0FCDD9C822B543850098E877 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0FCDD9C322B523740098E877 /* PasswordVC.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +307,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FCDD99622B4FFC90098E877 /* ViewController.swift in Sources */,
+				0FCDD9C422B523740098E877 /* PasswordVC.swift in Sources */,
 				0FCDD99422B4FFC90098E877 /* AppDelegate.swift in Sources */,
+				0FCDD9D022B578FA0098E877 /* PasswordModel.swift in Sources */,
+				0FCDD9CE22B56C9B0098E877 /* Box.swift in Sources */,
+				0FCDD9CA22B543A70098E877 /* PasswordView.swift in Sources */,
+				0FCDD9D222B58E3B0098E877 /* CheckPasswordStrength.swift in Sources */,
+				0FCDD9CC22B566140098E877 /* PasswordViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
